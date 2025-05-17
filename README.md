@@ -40,41 +40,71 @@ A web-based flight booking system built using **Django**. This platform enables 
 
 ```text
 flight_booking/
-├── templates/       # HTML templates (Bootstrap-based)
-├── views.py         # View logic
-├── urls.py          # URL routing
-├── models.py        # Models for Flights, Bookings, Users
-├── forms.py         # Forms for registration, profile, booking
-├── static/          # Static files (CSS, JS)
-├── admin.py         # Admin configuration
-└── migrations/      # Django migrations
+├── flight_booking/       # Django project settings
+├── app/                  # Core app for flights, bookings, payments
+├── templates/            # HTML templates (Bootstrap-based)
+├── static/               # Static files (CSS, JS, images)
+├── db.sqlite3            # SQLite database
+├── manage.py             # Django management script
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
 
-manage.py            # Django management script
-db.sqlite3           # SQLite database
-requirements.txt     # Python dependencies
+```
 
 ---
 
-# 1. Clone the Repository
+## ⚙️ Installation & Setup
+
+### 1. 📥 Clone the Repository
+
+```bash
 git clone https://github.com/yourname/YourRepo.git
 cd YourRepo
+```
 
-# 2. Create a Virtual Environment
+### 2. 🧪 Create a Virtual Environment
+
+```bash
 python -m venv venv
-source venv/bin/activate        # Windows: venv\Scripts\activate
+source venv/bin/activate        # On Windows: venv\Scripts\activate
+```
 
-# 3. Install Dependencies
+### 3. 📦 Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-# 4. Apply Migrations
+### 4. 🔄 Apply Migrations
+
+```bash
 python manage.py migrate
+```
 
-# 5. Create Superuser
+### 5. 👤 Create Superuser
+
+```bash
 python manage.py createsuperuser
+```
 
-# 6. Run the Development Server
+### 6. 🚀 Run the Development Server
+
+```bash
 python manage.py runserver
+```
 
-# Visit the app at:
-http://127.0.0.1:8000
+### 🔗 Visit the App
 
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+## 🔐 Security
+- 🔒 User passwords are securely hashed using Django's built-in authentication system
+- ✅ Authentication required for booking, payment, and ticket viewing
+- 🔐 Admin panel protected with superuser access only
+
+---
+
+## 🙏 Thank You
+- Thank you for exploring the Airline Management System! Your feedback, suggestions, and contributions are always welcome. ✈️
