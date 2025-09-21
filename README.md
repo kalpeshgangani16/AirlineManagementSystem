@@ -58,8 +58,8 @@ flight_booking/
 ### 1. 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/yourname/YourRepo.git
-cd YourRepo
+git clone https://github.com/kalpeshgangani16/AirlineManagementSystem.git
+cd AirlineManagementSystem
 ```
 
 ### 2. 🧪 Create a Virtual Environment
